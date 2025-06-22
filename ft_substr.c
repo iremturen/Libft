@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
+/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 17:40:00 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/20 19:06:17 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/22 12:28:28 by iremturen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	i = start;
 	j = 0;
-	while (s[i] != '\0')
+	while (s[i] != '\0' && j < len)
 	{
 		str[j] = s[i];
 		i++;

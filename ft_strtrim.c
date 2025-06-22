@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
+/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 17:39:56 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/19 16:48:05 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/22 12:00:45 by iremturen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	str[i] = '\0';
 	return (str);
-}
-
-#include <stdio.h>
-
-int main()
-{
-	char *s1 = "";
-	char *set = " ";
-	printf("Sonuc:%s\n", ft_strtrim(s1,set));
-	return 0;
 }
