@@ -6,7 +6,7 @@
 /*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 12:50:25 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/22 11:33:50 by iremturen        ###   ########.fr       */
+/*   Updated: 2025/06/22 22:47:50 by iremturen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
 	if (!src || !dst)
-		return (NULL);	
+		return (NULL);
 	if (d > s)
 	{
 		i = len;
