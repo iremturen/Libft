@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
+/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 13:34:14 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/22 22:39:53 by iremturen        ###   ########.fr       */
+/*   Updated: 2025/06/23 17:44:25 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*ptr;
-	size_t	total_size;
-	size_t	i;
+	size_t			total_size;
+	size_t			i;
 
 	i = 0;
 	total_size = nmemb * size;
