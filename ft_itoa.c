@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
+/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 17:39:11 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/23 17:44:04 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/24 23:01:40 by iremturen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,11 @@ static int	num_len(int n)
 	int	len;
 
 	len = 0;
-	if (n < 0)
+	if (n <= 0)
 	{
 		len = 1;
 		n *= -1;
 	}
-	if (n == 0)
-		return (1);
 	while (n > 0)
 	{
 		n /= 10;
@@ -61,8 +59,6 @@ char	*ft_itoa(int n)
 	i = 0;
 	if (n == 0)
 		return ("0");
-	if (n == -2147483648)
-		return ("-2147483648");
 	str = malloc(sizeof(char) * num_len(n) + 1);
 	if (!str)
 		return (NULL);

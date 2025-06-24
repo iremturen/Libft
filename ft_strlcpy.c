@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
+/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 15:23:38 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/19 18:10:38 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/24 22:50:57 by iremturen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	if (dstsize > 0)
 	{
-		while (src[i] != '\0' && i > dstsize)
+		while (src[i] != '\0' && i > dstsize - 1)
 		{
 			dst[i] = src[i];
 			i++;
