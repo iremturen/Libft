@@ -6,7 +6,7 @@
 /*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 12:50:25 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/25 14:22:26 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/25 14:40:46 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		{
 			((unsigned char *)dst)[i] = ((const unsigned char *)src)[i];
 			i++;
-		}	
+		}
 	}
 	return (dst);
 }
