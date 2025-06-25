@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
+/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 12:50:25 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/24 23:15:16 by iremturen        ###   ########.fr       */
+/*   Updated: 2025/06/25 14:22:26 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t				i;
 
-	if (!src || !dst)
-		return (NULL);
+	if ((!src && !dst) || len == 0)
+		return (dst);
 	if (dst > src)
 	{
 		i = len;
