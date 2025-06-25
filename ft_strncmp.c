@@ -6,7 +6,7 @@
 /*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 17:17:24 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/19 16:44:18 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/25 14:37:34 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (n--)
+	int	i;
+
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (i < n && (s1[i] || s2[i]))
 	{
 		if (*s1 != *s2)
 			return (*s1 - *s2);
