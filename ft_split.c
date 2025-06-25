@@ -6,7 +6,7 @@
 /*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 19:52:56 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/23 18:27:39 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/25 13:59:51 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,15 @@ static int	word_count(char const *s, char c)
 	return (count);
 }
 
-static int	add_word(char **res, char const *s, int start, int len, int *j)
+static int	add_word(char **res, char const *s, int *j)
 {
+	int	start;
+	int	len;
+
+	len = 0;
+	start = 0;
+	while (s[len])
+		len++;
 	res[*j] = ft_substr(s, start, len);
 	if (!res[*j])
 	{
@@ -77,7 +84,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 		if (i > start)
 		{
-			if (!add_word(res, s, start, i - start, &j))
+			if (!add_word(res, s + start, &j))
 				return (NULL);
 		}
 	}
