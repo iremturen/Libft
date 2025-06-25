@@ -6,11 +6,12 @@
 /*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 17:12:28 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/25 19:13:50 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/25 19:42:16 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -25,5 +26,5 @@ char	*ft_strrchr(const char *s, int c)
 		}
 		i--;
 	}
-	return (NULL);
+	return ("");
 }
