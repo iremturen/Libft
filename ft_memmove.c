@@ -6,7 +6,7 @@
 /*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/01 12:50:25 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/25 14:40:46 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/25 17:53:29 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t				i;
 
-	if ((!src && !dst) || len == 0)
-		return (dst);
+	if ((!src && !dst))
+		return (NULL);
 	if (dst > src)
 	{
 		i = len;
