@@ -6,7 +6,7 @@
 /*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 17:39:11 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/25 19:04:39 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/25 19:10:51 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 static int	num_len(int n)
 {
-	int	len;
-	long nb;
+	int		len;
+	long	nb;
 
 	nb = (long)n;
 	len = 0;
