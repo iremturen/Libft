@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
+/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 17:39:11 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/24 23:01:40 by iremturen        ###   ########.fr       */
+/*   Updated: 2025/06/25 19:04:39 by ituren           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,18 @@
 static int	num_len(int n)
 {
 	int	len;
+	long nb;
 
+	nb = (long)n;
 	len = 0;
-	if (n <= 0)
+	if (nb <= 0)
 	{
 		len = 1;
-		n *= -1;
+		nb *= -1;
 	}
-	while (n > 0)
+	while (nb > 0)
 	{
-		n /= 10;
+		nb /= 10;
 		len++;
 	}
 	return (len);
@@ -55,23 +57,24 @@ char	*ft_itoa(int n)
 {
 	char	*str;
 	int		i;
+	long	nb;
 
+	nb = (long)n;
 	i = 0;
-	if (n == 0)
-		return ("0");
-	str = malloc(sizeof(char) * num_len(n) + 1);
+	if (nb == 0)
+		return (ft_strdup("0"));
+	str = malloc(sizeof(char) * (num_len(n) + 1));
 	if (!str)
 		return (NULL);
-	if (n < 0)
+	if (nb < 0)
 	{
-		str[i] = '-';
-		n *= -1;
-		i++;
+		str[i++] = '-';
+		nb *= -1;
 	}
-	while (n > 0)
+	while (nb > 0)
 	{
-		str[i] = (n % 10) + '0';
-		n /= 10;
+		str[i] = (nb % 10) + '0';
+		nb /= 10;
 		i++;
 	}
 	str[i] = '\0';
