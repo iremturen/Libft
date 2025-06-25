@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ituren <ituren@student.42.fr>              +#+  +:+       +#+         #
+#    By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/03 16:07:16 by ituren            #+#    #+#              #
-#    Updated: 2025/06/23 20:54:42 by ituren           ###   ########.fr        #
+#    Updated: 2025/06/25 21:27:29 by iremturen        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ OBJS= $(SRCS:.c=.o)
 
 BONUS			=	ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c \
 					ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstlast_bonus.c \
-					ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c
+					ft_lstnew_bonus.c ft_lstsize_bonus.c
 					
 BONUS_OBJS	= $(BONUS:.c=.o)
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ituren <ituren@student.42.fr>              +#+  +:+       +#+        */
+/*   By: iremturen <iremturen@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 13:56:58 by ituren            #+#    #+#             */
-/*   Updated: 2025/06/25 13:57:01 by ituren           ###   ########.fr       */
+/*   Updated: 2025/06/25 21:27:25 by iremturen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,5 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstadd_back(t_list **lst, t_list *new);
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif
